@@ -15,7 +15,7 @@ Jeweler::Tasks.new do |gem|
 	gem.name = "wepawet"
 	gem.homepage = "http://github.com/chrislee35/wepawet"
 	gem.license = "MIT"
-	gem.summary = %Q{provides an interface to UAB's wepawet malicious URL analysis project}
+	gem.summary = %Q{provides an interface to UCSB's wepawet malicious URL analysis project}
 	gem.description = %Q{Wepawet is a service for detecting and analyzing web-based malware. It currently handles Flash, JavaScript, and PDF files. http://wepawet.cs.ucsb.edu}
 	gem.email = "rubygems@chrislee.dhs.org"
 	gem.authors = ["Chris Lee"]

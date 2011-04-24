@@ -1,6 +1,6 @@
 = wepawet
 
-This gem provides an interface to UAB's wepawet malicious URL analysis project
+This gem provides an interface to UCSB's wepawet malicious URL analysis project
 Wepawet is a service for detecting and analyzing web-based malware. It currently handles Flash, JavaScript, and PDF files. http://wepawet.cs.ucsb.edu
 
 Example usage:
