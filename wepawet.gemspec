@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{wepawet}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chris Lee"]
@@ -29,13 +29,14 @@ Gem::Specification.new do |s|
     "lib/wepawet.rb",
     "lib/wepawet/wepawet.rb",
     "test/helper.rb",
-    "test/test_wepawet.rb"
+    "test/test_wepawet.rb",
+    "wepawet.gemspec"
   ]
   s.homepage = %q{http://github.com/chrislee35/wepawet}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.7.2}
-  s.summary = %q{provides an interface to UAB's wepawet malicious URL analysis project}
+  s.summary = %q{provides an interface to UCSB's wepawet malicious URL analysis project}
   s.test_files = [
     "test/helper.rb",
     "test/test_wepawet.rb"
