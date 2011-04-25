@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{wepawet}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chris Lee"]
-  s.date = %q{2011-04-24}
+  s.date = %q{2011-04-25}
   s.description = %q{Wepawet is a service for detecting and analyzing web-based malware. It currently handles Flash, JavaScript, and PDF files. http://wepawet.cs.ucsb.edu}
   s.email = %q{rubygems@chrislee.dhs.org}
   s.executables = ["wepawet"]
