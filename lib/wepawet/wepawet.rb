@@ -10,7 +10,12 @@ module Wepawet
 	
 	# Wepawet::Submit is used to submit new files and/or URLs into the wepawet system.
 	class Submit
-		def initialize(config)
+		def initialize(config = {
+			'wepawetSubmitUrl' => 'http://wepawet.cs.ucsb.edu/services/upload.php', 
+			'wepawetQueryUrl' => 'http://wepawet.cs.ucsb.edu/services/query.php',
+			'wepawetDomainUrl' => 'http://wepawet.cs.ucsb.edu/services/domain.php',
+			'wepawetUrlUrl' => 'http://wepawet.cs.ucsb.edu/services/url.php',
+		})
 			@config = config
 		end
 		
@@ -37,7 +42,6 @@ module Wepawet
 			['user','passwd','referer'].each do |opt|
 				params[opt] = @config[opt] if @config[opt]
 			end
-			puts @config['wepawetSubmitUrl']
 			uri = URI.parse(@config['wepawetSubmitUrl'])
 			http = Net::HTTP.new(uri.host, uri.port)
 			http.use_ssl = (uri.scheme == 'https')
@@ -59,7 +63,12 @@ module Wepawet
 	end
 	
 	class Query
-		def initialize(config)
+		def initialize(config = {
+			'wepawetSubmitUrl' => 'http://wepawet.cs.ucsb.edu/services/upload.php', 
+			'wepawetQueryUrl' => 'http://wepawet.cs.ucsb.edu/services/query.php',
+			'wepawetDomainUrl' => 'http://wepawet.cs.ucsb.edu/services/domain.php',
+			'wepawetUrlUrl' => 'http://wepawet.cs.ucsb.edu/services/url.php',
+		})
 			@config = config
 		end
 		
