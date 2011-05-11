@@ -28,7 +28,7 @@ module Wepawet
 			params['file'] = UploadIO.new(file, "application/octet-stream", File.basename(filename))
 			uri = URI.parse(@config['wepawetSubmitUrl'])
 			http = Net::HTTP.new(uri.host, uri.port)
-			http.use_ssl = (url.scheme == 'https')
+			http.use_ssl = (uri.scheme == 'https')
 			http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 			request = Net::HTTP::Post::Multipart.new(uri.path, params)
 			request.add_field("User-Agent", "Ruby/#{RUBY_VERSION} wepawet gem (https://github.com/chrislee35/wepawet)")

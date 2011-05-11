@@ -22,6 +22,8 @@ Jeweler::Tasks.new do |gem|
 	gem.add_runtime_dependency "multipart-post", ">= 1.1.0"
 	gem.add_runtime_dependency "libxml-ruby", ">= 1.1.4"
 	gem.executables = ["wepawet"]
+	gem.signing_key = "#{File.dirname(__FILE__)}/../gem-private_key.pem"
+	gem.cert_chain  = ["#{File.dirname(__FILE__)}/../gem-public_cert.pem"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
