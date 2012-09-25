@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chris Lee"]
-  s.cert_chain = ["/Users/chris/Documents/projects/rubygems/wepawet/../gem-public_cert.pem"]
+  # s.cert_chain = ["/Users/chris/Documents/projects/rubygems/wepawet/../gem-public_cert.pem"]
   s.date = %q{2011-05-11}
   s.description = %q{Wepawet is a service for detecting and analyzing web-based malware. It currently handles Flash, JavaScript, and PDF files. http://wepawet.cs.ucsb.edu}
   s.email = %q{rubygems@chrislee.dhs.org}
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.7.2}
-  s.signing_key = %q{/Users/chris/Documents/projects/rubygems/wepawet/../gem-private_key.pem}
+  # s.signing_key = %q{/Users/chris/Documents/projects/rubygems/wepawet/../gem-private_key.pem}
   s.summary = %q{provides an interface to UCSB's wepawet malicious URL analysis project}
   s.test_files = [
     "test/helper.rb",
@@ -77,4 +77,3 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<libxml-ruby>, [">= 1.1.4"])
   end
 end
-
