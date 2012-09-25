@@ -100,7 +100,7 @@ module Wepawet
     end
 
     def _parse_response(doc)
-      xml = XML::Document.string(doc)
+      xml = XML::Document.string(doc.strip)
       hash = {}
       xml.child.children.each do |node|
         if node.name =~ /\w/ and node.child
